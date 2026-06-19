@@ -1,0 +1,182 @@
+[
+  {
+    "incident_id": "INC001",
+    "title": "SQL Developer is not working",
+    "description": "SQL Developer is not working . Access denied error.",
+    "solution": "1. Close All Browsers\nSave any important work.\nClose all open browser windows (Chrome, Edge, Firefox, etc.).\nMake sure they are fully closed:\nPress Ctrl + Shift + Esc → open Task Manager\nEnd any remaining browser processes\n2. Flush DNS Cache\nPress Windows + R\nType cmd and press Enter\nIn the Command Prompt, type:\nipconfig /flushdns\nPress Enter\nYou should see: “Successfully flushed the DNS Resolver Cache”\n3. Reset Citrix Workspace\nOpen Citrix Workspace\nClick on your profile icon (top right corner)\nSelect Advanced Preferences\nClick Reset Citrix Workspace\nConfirm by clicking Yes / Reset\n4. Clear Browser History & Cache\nFor Chrome / Edge:\nPress Ctrl + Shift + Delete\nSelect:\nBrowsing history\nCookies and site data\nCached images and files\nChoose Time range: All time\nClick Clear data\n5. Try to Open SQL Developer\nLaunch SQL Developer\nCheck if it opens without errors"
+  },
+  {
+    "incident_id": "INC002",
+    "title": "SAP BI4 Launchpad not opening",
+    "description": "User unable to open SAP BI Launchpad; page keeps loading or shows blank screen",
+    "solution": "1. Close All Browsers\nSave any important work\nClose Chrome / Edge / Firefox completely\nPress Ctrl + Shift + Esc → Task Manager\nEnd all browser-related processes\n\n2. Clear Browser Cache\nOpen Chrome / Edge\nPress Ctrl + Shift + Delete\nSelect:\n\n* Browsing history\n* Cookies and site data\n* Cached images and files\n  Set Time range to All time → Click Clear Data\n\n3. Enable Pop-ups\nGo to Settings → Privacy & Security → Site Settings\nClick Pop-ups and redirects\nAdd BI Launchpad URL → Allow\n\n4. Verify Network Connection\nDisconnect and reconnect VPN\nEnsure stable internet connection\n\n5. Try Launching BI4\nOpen browser\nEnter BI Launchpad URL\nLogin and verify access"
+  },
+  {
+    "incident_id": "INC003",
+    "title": "Power BI Report Not Loading",
+    "description": "Reports show blank screen or keep loading",
+    "solution": "1. Refresh the Report\nOpen Power BI Service\nPress Ctrl + F5 for hard refresh\n\n2. Clear Browser Cache\nPress Ctrl + Shift + Delete\nSelect all cache options → Click Clear Data\n\n3. Check Power BI Service Status\nOpen https://status.powerbi.com\nEnsure no outage is reported\n\n4. Open in Incognito Mode\nPress Ctrl + Shift + N\nLogin and access report\n\n5. Re-login to Power BI\nClick profile → Sign out\nSign in again"
+  },
+  {
+    "incident_id": "INC004",
+    "title": "SQL Server Connection Timeout",
+    "description": "Unable to connect to SQL Server",
+    "solution": "1. Verify Server Name\nOpen SQL Server Management Studio (SSMS)\nCheck correct Server Name and Authentication type\n\n2. Test Network Connectivity\nPress Windows + R → cmd → Enter\nType:\n\nping <server_name>\n\n3. Check SQL Services\nPress Windows + R → services.msc\nFind SQL Server (MSSQLSERVER)\nRight-click → Start/Restart\n\n4. Enable TCP/IP\nOpen SQL Server Configuration Manager\nGo to SQL Network Configuration\nEnable TCP/IP\n\n5. Retry Connection\nOpen SSMS\nEnter credentials and test"
+  },
+  {
+    "incident_id": "INC005",
+    "title": "Oracle SQL Developer Connection Failed",
+    "description": "Connection error while connecting to Oracle DB",
+    "solution": "1. Verify Connection Details\nOpen SQL Developer\nCheck:\n\n* Hostname\n* Port\n* Service Name / SID\n\n2. Test Connection\nClick Test button\n\n3. Check VPN Connection\nEnsure VPN is connected\n\n4. Restart Oracle Listener\nOpen Command Prompt\nType:\n\nlsnrctl restart\n\n5. Try Connecting Again\nClick Connect\nVerify success"
+  },
+  {
+    "incident_id": "INC006",
+    "title": "Power BI Dataset Refresh Failed",
+    "description": "Scheduled refresh is failing in Power BI",
+    "solution": "1. Open Power BI Service\nGo to workspace\nClick Datasets\n\n2. Open Dataset Settings\nClick More options (…) → Settings\n\n3. Update Credentials\nScroll to Data source credentials\nClick Edit credentials\nRe-enter username/password\n\n4. Check Gateway\nGo to Gateway Connection\nEnsure gateway is online\n\n5. Trigger Manual Refresh\nClick Refresh Now"
+  },
+  {
+    "incident_id": "INC007",
+    "title": "SAP WebI Report Not Refreshing",
+    "description": "Report shows old data",
+    "solution": "1. Open Report\nLogin to BI Launchpad\nOpen Web Intelligence report\n\n2. Switch to Edit Mode\nClick Design → Edit\n\n3. Refresh Data\nClick Data Refresh button\n\n4. Check Database Credentials\nClick Data → Data Providers → Properties\nVerify login details\n\n5. Save and Re-open\nSave report\nClose and reopen"
+  },
+  {
+    "incident_id": "INC008",
+    "title": "Azure Pipeline Failed",
+    "description": "Pipeline execution failed in Azure DevOps",
+    "solution": "1. Open Azure DevOps\nGo to project → Pipelines\n\n2. Open Failed Pipeline\nClick failed run\n\n3. View Logs\nClick failed stage\nReview error message\n\n4. Fix Issue\nUpdate script / config\nCorrect credentials if needed\n\n5. Re-run Pipeline\nClick Run pipeline → Run"
+  },
+  {
+    "incident_id": "INC009",
+    "title": "SQL Query Running Slow",
+    "description": "Query execution taking too long",
+    "solution": "1. Open Query in SSMS\nPaste query\n\n2. Enable Execution Plan\nClick Include Actual Execution Plan\n\n3. Run Query\nClick Execute\n\n4. Analyze Plan\nIdentify:\n\n* Table scan\n* Missing index\n\n5. Optimize Query\nAdd indexes\nRemove unnecessary joins\nAvoid SELECT *"
+  },
+  {
+    "incident_id": "INC010",
+    "title": "Oracle Listener Not Working",
+    "description": "Listener service is down",
+    "solution": "1. Open Command Prompt\nPress Windows + R → cmd\n\n2. Check Listener Status\nType:\n\nlsnrctl status\n\n3. Start Listener\nType:\n\nlsnrctl start\n\n4. Verify Configuration\nCheck listener.ora file\n\n5. Retry DB Connection\nOpen SQL Developer → Connect"
+  },
+  {
+    "incident_id": "INC011",
+    "title": "Power BI Gateway Offline",
+    "description": "Gateway showing offline",
+    "solution": "1. Login to Gateway Server\nRemote desktop to server\n\n2. Restart Gateway Service\nPress Windows + R → services.msc\nFind On-premises data gateway\nClick Restart\n\n3. Login to Gateway App\nOpen gateway\nSign in again\n\n4. Check Internet Connection\nEnsure server has internet\n\n5. Verify in Power BI\nRefresh gateway status"
+  },
+  {
+    "incident_id": "INC012",
+    "title": "SAP BI User Login Failed",
+    "description": "User unable to login",
+    "solution": "1. Verify Credentials\nEnsure correct username/password\n\n2. Select Authentication Type\nChoose:\n\n* Enterprise\n* LDAP\n\n3. Reset Password\nGo to CMC → Users\nReset password\n\n4. Check Account Lock\nUnlock user account\n\n5. Retry Login\nLogin again"
+  },
+  {
+    "incident_id": "INC013",
+    "title": "SQL Job Failed",
+    "description": "Scheduled job not running",
+    "solution": "1. Open SSMS\nConnect to SQL Server\n\n2. Open SQL Server Agent\nExpand → Jobs\n\n3. View Job History\nRight-click job → View history\n\n4. Identify Error\nCheck failed step\n\n5. Fix & Retry\nCorrect issue → Right-click → Start Job"
+  },
+  {
+    "incident_id": "INC014",
+    "title": "Power BI Visuals Not Showing",
+    "description": "Blank visuals in report",
+    "solution": "1. Refresh Report\nPress Ctrl + F5\n\n2. Check Filters\nRemove filters from panel\n\n3. Verify Dataset\nCheck dataset refresh\n\n4. Reconnect Data\nGo to Edit → Refresh Data\n\n5. Reopen Report\nClose and reopen"
+  },
+  {
+    "incident_id": "INC015",
+    "title": "SAP WebI Export to Excel Not Working",
+    "description": "Export option fails",
+    "solution": "1. Open Report\nLogin to BI Launchpad\n\n2. Click Export\nClick Export → Excel\n\n3. Allow Pop-ups\nBrowser → Settings → Allow pop-ups\n\n4. Clear Cache\nPress Ctrl + Shift + Delete → Clear Data\n\n5. Try Different Browser\nUse Edge or Chrome"
+  },
+  {
+    "incident_id": "INC016",
+    "title": "Azure Pipeline Stuck in Queue",
+    "description": "Pipeline is not starting and remains in queued state",
+    "solution": "1. Login to Azure DevOps\nOpen browser → Go to Azure DevOps portal\nNavigate to your Project\n\n2. Open Pipelines\nClick Pipelines → Runs\nSelect the queued pipeline\n\n3. Check Agent Availability\nClick Agent Pool\nVerify if agent is Online\n\n4. Restart Agent (if required)\nLogin to agent machine\nRestart Azure DevOps Agent Service\n\n5. Retry Pipeline Run\nClick Run pipeline → Run\nVerify it starts execution"
+  },
+  {
+    "incident_id": "INC017",
+    "title": "SQL Login Failed for User",
+    "description": "User receives login failed error in SQL Server",
+    "solution": "1. Open SSMS\nLaunch SQL Server Management Studio\n\n2. Verify Credentials\nEnter correct:\n\n* Username\n* Password\n\n3. Check Authentication Mode\nRight-click server → Properties\nClick Security\nSelect SQL Server and Windows Authentication Mode\n\n4. Unlock Login\nGo to Security → Logins\nRight-click user → Properties\nEnsure account is enabled\n\n5. Retry Login\nReconnect using correct credentials"
+  },
+  {
+    "incident_id": "INC018",
+    "title": "Oracle Tablespace Full",
+    "description": "Database not accepting new data due to full tablespace",
+    "solution": "1. Login to Oracle DB\nOpen SQL Developer\n\n2. Check Tablespace Usage\nRun:\n\nSELECT tablespace_name, used_percent FROM dba_tablespace_usage_metrics;\n\n3. Add Datafile\nExecute:\n\nALTER TABLESPACE users ADD DATAFILE 'users02.dbf' SIZE 500M;\n\n4. Resize Existing Datafile\nRun:\n\nALTER DATABASE DATAFILE 'users01.dbf' RESIZE 1G;\n\n5. Verify Changes\nRe-run usage query and confirm space is available"
+  },
+  {
+    "incident_id": "INC019",
+    "title": "Power BI Dataset Not Found",
+    "description": "Dataset missing from workspace",
+    "solution": "1. Open Power BI Service\nGo to app.powerbi.com\n\n2. Navigate to Workspace\nClick Workspaces → Select Workspace\n\n3. Check Dataset Tab\nClick Datasets\nConfirm dataset presence\n\n4. Verify Permissions\nClick Access → Check user role\n\n5. Republish Dataset (if missing)\nOpen Power BI Desktop\nClick Publish → Select workspace"
+  },
+  {
+    "incident_id": "INC020",
+    "title": "SAP BI Report Scheduling Failed",
+    "description": "Scheduled reports not running",
+    "solution": "1. Login to CMC\nOpen Central Management Console\n\n2. Go to Instances\nClick Folders → Report → Instances\n\n3. Check Failed Job\nOpen failed instance → View error\n\n4. Verify Destination Settings\nCheck email/file destination\n\n5. Reschedule Report\nClick Schedule → Run Now"
+  },
+  {
+    "incident_id": "INC021",
+    "title": "SQL Server High CPU Usage",
+    "description": "SQL Server consuming high CPU",
+    "solution": "1. Open SSMS\nConnect to SQL Server\n\n2. Identify High CPU Queries\nClick Activity Monitor\n\n3. View Processes\nSort by CPU usage\n\n4. Kill Problem Query (if needed)\nRight-click session → Kill Process\n\n5. Optimize Query\nRewrite query / add index"
+  },
+  {
+    "incident_id": "INC022",
+    "title": "Oracle Database Not Starting",
+    "description": "Oracle instance fails to start",
+    "solution": "1. Open Command Prompt\nPress Windows + R → cmd\n\n2. Connect as SYSDBA\nType:\n\nsqlplus / as sysdba\n\n3. Start Database\nRun:\n\nstartup\n\n4. Check Errors\nOpen alert log file\n\n5. Fix Issue & Restart\nCorrect parameter/file issue\nRun startup again"
+  },
+  {
+    "incident_id": "INC023",
+    "title": "Power BI Login Issue",
+    "description": "User unable to sign in",
+    "solution": "1. Open Power BI Service\nGo to app.powerbi.com\n\n2. Clear Browser Cache\nPress Ctrl + Shift + Delete\nSelect all → Clear\n\n3. Check Credentials\nEnter correct email/password\n\n4. Reset Password\nGo to login page → Click Forgot Password\n\n5. Try Different Browser\nUse Chrome or Edge"
+  },
+  {
+    "incident_id": "INC024",
+    "title": "SAP BI CMS Down",
+    "description": "Central Management Server not responding",
+    "solution": "1. Login to Server\nRemote into BI server\n\n2. Open BI Central Configuration Manager (CCM)\nSearch → Open CCM\n\n3. Check CMS Status\nLocate CMS service\n\n4. Restart CMS\nRight-click → Restart\n\n5. Start Dependent Services\nStart all BI services after CMS"
+  },
+  {
+    "incident_id": "INC025",
+    "title": "Azure Pipeline Permission Denied",
+    "description": "User cannot run pipeline",
+    "solution": "1. Login to Azure DevOps\nOpen project\n\n2. Open Pipeline Settings\nGo to Pipelines → Select Pipeline\n\n3. Check Security\nClick … (More options) → Security\n\n4. Grant Permissions\nAdd user\nSelect:\n\n* Run pipeline → Allow\n\n5. Retry Pipeline\nClick Run pipeline"
+  },
+  {
+    "incident_id": "INC026",
+    "title": "SQL Database in Recovery Mode",
+    "description": "DB stuck in recovery",
+    "solution": "1. Open SSMS\nConnect to SQL Server\n\n2. Check DB Status\nExpand Databases\n\n3. Set Emergency Mode\nRun:\n\nALTER DATABASE dbname SET EMERGENCY;\n\n4. Repair Database\nRun:\n\nDBCC CHECKDB (dbname, REPAIR_ALLOW_DATA_LOSS);\n\n5. Bring Database Online\nRun:\n\nALTER DATABASE dbname SET ONLINE;"
+  },
+  {
+    "incident_id": "INC027",
+    "title": "Power BI Report Sharing Issue",
+    "description": "Unable to share reports",
+    "solution": "1. Open Report\nGo to Power BI Service\n\n2. Click Share\nClick Share button (top right)\n\n3. Enter User Email\nAdd recipients\n\n4. Assign Permissions\nSelect:\n\n* View or Edit\n\n5. Send Invitation\nClick Send\nVerify access"
+  },
+  {
+    "incident_id": "INC028",
+    "title": "SAP BI Universe Connection Error",
+    "description": "Universe not connecting to database",
+    "solution": "1. Open Information Design Tool (IDT)\nLaunch IDT\n\n2. Open Project\nGo to Local Projects → Open Universe\n\n3. Check Connection\nRight-click connection → Test Connection\n\n4. Update Credentials\nEdit username/password\n\n5. Publish Universe\nRight-click → Publish to Repository"
+  },
+  {
+    "incident_id": "INC029",
+    "title": "Oracle Query Returning No Data",
+    "description": "Query returns empty result unexpectedly",
+    "solution": "1. Open SQL Developer\nLogin to DB\n\n2. Run Basic Query\nCheck table:\n\nSELECT * FROM table_name;\n\n3. Check Filters\nRemove WHERE clause\n\n4. Validate Joins\nCheck joins for mismatch\n\n5. Re-run Query\nConfirm data appears"
+  },
+  {
+    "incident_id": "INC030",
+    "title": "Azure OnePipeline Artifact Missing",
+    "description": "Artifacts not available after pipeline run",
+    "solution": "1. Open Azure DevOps\nGo to Pipelines → Runs\n\n2. Select Pipeline Run\nClick latest run\n\n3. Check Artifacts Section\nScroll to Artifacts\n\n4. Verify Publish Step\nCheck YAML or pipeline task:\n\n* PublishBuildArtifacts\n\n5. Re-run Pipeline\nClick Run pipeline"
+  }
+]
