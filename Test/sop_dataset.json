@@ -1,0 +1,100 @@
+[
+  {
+    "document_id": "SOP1",
+    "title": "Restart Scheduler Service",
+    "application": "Windows-OPS",
+    "keywords": [
+      "scheduler",
+      "restart",
+      "job failure"
+    ],
+    "steps": [
+      "Login to Windows server using RDP",
+      "Open Services and locate Task Scheduler",
+      "Restart the scheduler service",
+      "Validate scheduled jobs execution"
+    ],
+    "severity_supported": [
+      "MEDIUM",
+      "HIGH"
+    ]
+  },
+  {
+    "document_id": "SOP2",
+    "title": "Clear Windows Cache",
+    "application": "Windows-OPS",
+    "keywords": [
+      "cache",
+      "performance",
+      "latency"
+    ],
+    "steps": [
+      "Open command prompt as administrator",
+      "Clear temp files using disk cleanup",
+      "Flush DNS cache using ipconfig /flushdns",
+      "Validate system performance"
+    ],
+    "severity_supported": [
+      "LOW",
+      "MEDIUM"
+    ]
+  },
+  {
+    "document_id": "SOP3",
+    "title": "Restart IIS Services",
+    "application": "Windows-OPS",
+    "keywords": [
+      "iis",
+      "web server",
+      "restart"
+    ],
+    "steps": [
+      "Login to server hosting IIS",
+      "Open IIS Manager",
+      "Restart IIS using iisreset command",
+      "Validate website availability"
+    ],
+    "severity_supported": [
+      "HIGH"
+    ]
+  },
+  {
+    "document_id": "SOP4",
+    "title": "Fix RDP Connectivity Issue",
+    "application": "Windows-OPS",
+    "keywords": [
+      "rdp",
+      "remote access",
+      "connection"
+    ],
+    "steps": [
+      "Check server network connectivity",
+      "Verify RDP port 3389 is open",
+      "Update firewall rules if needed",
+      "Retry remote connection"
+    ],
+    "severity_supported": [
+      "MEDIUM",
+      "HIGH"
+    ]
+  },
+  {
+    "document_id": "SOP5",
+    "title": "Resolve Disk Space Issue",
+    "application": "Windows-OPS",
+    "keywords": [
+      "disk",
+      "storage",
+      "space"
+    ],
+    "steps": [
+      "Check disk usage via File Explorer",
+      "Delete unnecessary files/logs",
+      "Run disk cleanup utility",
+      "Extend disk if needed"
+    ],
+    "severity_supported": [
+      "HIGH"
+    ]
+  }
+]

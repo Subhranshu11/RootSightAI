@@ -1,0 +1,17 @@
+streamlit
+groq
+faiss-cpu
+numpy
+sentence-transformers
+python-dotenv
+
+pandas
+openpyxl
+
+PyPDF2
+python-docx
+python-pptx
+
+scikit-learn
+torch
+transformers
